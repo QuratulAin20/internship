@@ -1,0 +1,11 @@
+streamlit
+torch
+torchvision
+sentencepiece
+accelerate
+diffusers
+transformers
+sentence-transformers
+Pillow
+huggingface_hub
+python-dotenv
