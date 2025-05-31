@@ -1,1 +1,125 @@
+Timestamp,Session ID,User Input,Answer,History
+2025-05-31 01:11:33,default_session,what services you provide,"We provide customized visa services.  These services are tailored to your specific needs, whether for business, study, or leisure.  We are committed to helping our clients navigate the visa process successfully. 
+
+
+","User: what services you provide | Bot: We provide customized visa services.  These services are tailored to your specific needs, whether for business, study, or leisure.  We are committed to helping our clients navigate the visa process successfully. 
+
+
+ |"
+2025-05-31 01:12:00,default_session,tell me about leisure services,"We offer customized leisure visa services to help you travel for tourism or vacation.  This includes assistance with tourist visas for various countries, ensuring you have the necessary documentation for a smooth trip. 
+","User: what services you provide | Bot: We provide customized visa services.  These services are tailored to your specific needs, whether for business, study, or leisure.  We are committed to helping our clients navigate the visa process successfully. 
+
+
+ | User: tell me about leisure services | Bot: We offer customized leisure visa services to help you travel for tourism or vacation.  This includes assistance with tourist visas for various countries, ensuring you have the necessary documentation for a smooth trip. 
+ |"
+2025-05-31 01:12:29,default_session,Do you provide hotel bookings,"While we specialize in visa services, we do not provide hotel bookings. 
+","User: what services you provide | Bot: We provide customized visa services.  These services are tailored to your specific needs, whether for business, study, or leisure.  We are committed to helping our clients navigate the visa process successfully. 
+
+
+ | User: tell me about leisure services | Bot: We offer customized leisure visa services to help you travel for tourism or vacation.  This includes assistance with tourist visas for various countries, ensuring you have the necessary documentation for a smooth trip. 
+ | User: Do you provide hotel bookings | Bot: While we specialize in visa services, we do not provide hotel bookings. 
+ |"
+2025-05-31 01:12:55,default_session,what if my visa will refuse do you offer refund,"Unfortunately, we cannot offer refunds if your visa application is denied.  Visa approvals are ultimately at the discretion of the relevant embassy or consulate. 
+","User: what services you provide | Bot: We provide customized visa services.  These services are tailored to your specific needs, whether for business, study, or leisure.  We are committed to helping our clients navigate the visa process successfully. 
+
+
+ | User: tell me about leisure services | Bot: We offer customized leisure visa services to help you travel for tourism or vacation.  This includes assistance with tourist visas for various countries, ensuring you have the necessary documentation for a smooth trip. 
+ | User: Do you provide hotel bookings | Bot: While we specialize in visa services, we do not provide hotel bookings. 
+ | User: what if my visa will refuse do you offer refund | Bot: Unfortunately, we cannot offer refunds if your visa application is denied.  Visa approvals are ultimately at the discretion of the relevant embassy or consulate. 
+ |"
+2025-05-31 01:26:33,9488de71,default_session,what is the procedure of visa,"This text describes a service that helps with visa applications.  They offer assistance with document gathering and provide step-by-step guidance.  To learn the specific visa application procedure, you'll need to consult the embassy or consulate of the country you're applying to. 
+
+
+","User: what is the procedure of visa | Bot: This text describes a service that helps with visa applications.  They offer assistance with document gathering and provide step-by-step guidance.  To learn the specific visa application procedure, you'll need to consult the embassy or consulate of the country you're applying to. 
+
+
+ |"
+2025-05-31 01:27:13,9488de71,default_session,tell me about your company,"I don't have a company. I am Gemma, an open-weights AI assistant developed by the Gemma team at Google DeepMind. 
+","User: what is the procedure of visa | Bot: This text describes a service that helps with visa applications.  They offer assistance with document gathering and provide step-by-step guidance.  To learn the specific visa application procedure, you'll need to consult the embassy or consulate of the country you're applying to. 
+
+
+ | User: tell me about your company | Bot: I don't have a company. I am Gemma, an open-weights AI assistant developed by the Gemma team at Google DeepMind. 
+ |"
+2025-05-31 01:27:33,9488de71,default_session,tell me about visa ,"A visa is an official document issued by a country that allows a foreign national to enter, stay in, or leave that country for a specific period.  It's typically required for tourism, business, study, or work purposes.  The specific requirements and process for obtaining a visa vary depending on the country and the applicant's nationality. 
+
+
+","User: what is the procedure of visa | Bot: This text describes a service that helps with visa applications.  They offer assistance with document gathering and provide step-by-step guidance.  To learn the specific visa application procedure, you'll need to consult the embassy or consulate of the country you're applying to. 
+
+
+ | User: tell me about your company | Bot: I don't have a company. I am Gemma, an open-weights AI assistant developed by the Gemma team at Google DeepMind. 
+ | User: tell me about visa  | Bot: A visa is an official document issued by a country that allows a foreign national to enter, stay in, or leave that country for a specific period.  It's typically required for tourism, business, study, or work purposes.  The specific requirements and process for obtaining a visa vary depending on the country and the applicant's nationality. 
+
+
+ |"
+2025-05-31 01:28:01,9488de71,default_session,tell me about visa facilitation company,"Visa Facilitation Company is a service that helps individuals navigate the visa application process. They offer guidance and support with gathering documents, understanding requirements, and submitting applications. Essentially, they aim to make the often complex visa process smoother and less stressful for applicants. 
+","User: what is the procedure of visa | Bot: This text describes a service that helps with visa applications.  They offer assistance with document gathering and provide step-by-step guidance.  To learn the specific visa application procedure, you'll need to consult the embassy or consulate of the country you're applying to. 
+
+
+ | User: tell me about your company | Bot: I don't have a company. I am Gemma, an open-weights AI assistant developed by the Gemma team at Google DeepMind. 
+ | User: tell me about visa  | Bot: A visa is an official document issued by a country that allows a foreign national to enter, stay in, or leave that country for a specific period.  It's typically required for tourism, business, study, or work purposes.  The specific requirements and process for obtaining a visa vary depending on the country and the applicant's nationality. 
+
+
+ | User: tell me about visa facilitation company | Bot: Visa Facilitation Company is a service that helps individuals navigate the visa application process. They offer guidance and support with gathering documents, understanding requirements, and submitting applications. Essentially, they aim to make the often complex visa process smoother and less stressful for applicants. 
+ |"
+2025-05-31 01:28:44,9488de71,default_session,please guide me through the document prepration steps,"Here's a general guide to document preparation for a visa application. 
+
+Remember, specific requirements vary by country and visa type, so always check the embassy or consulate's website first!
+
+1. **Passport:** Ensure your passport is valid for at least six months beyond your intended stay and has enough blank pages.
+2. **Application Form:** Complete the application form accurately and legibly, providing all requested information.
+3. **Photographs:** Obtain passport-sized photographs that meet the specified requirements (size, background, etc.).
+4. **Financial Documents:** Prepare proof of sufficient funds to cover your expenses during your stay (bank statements, employment letter, etc.).
+5. **Travel Itinerary:**  Create a detailed itinerary outlining your planned dates and activities in the destination country.
+6. **Proof of Accommodation:**  Provide evidence of where you will be staying (hotel reservations, invitation letter from a host, etc.).
+7. **Supporting Documents:**  Gather any additional documents specific to your visa type (e.g., employment contract, student acceptance letter, sponsorship letter).
+
+**Important:** Make copies of all documents and keep them separate from your originals. 
+
+
+
+","User: what is the procedure of visa | Bot: This text describes a service that helps with visa applications.  They offer assistance with document gathering and provide step-by-step guidance.  To learn the specific visa application procedure, you'll need to consult the embassy or consulate of the country you're applying to. 
+
+
+ | User: tell me about your company | Bot: I don't have a company. I am Gemma, an open-weights AI assistant developed by the Gemma team at Google DeepMind. 
+ | User: tell me about visa  | Bot: A visa is an official document issued by a country that allows a foreign national to enter, stay in, or leave that country for a specific period.  It's typically required for tourism, business, study, or work purposes.  The specific requirements and process for obtaining a visa vary depending on the country and the applicant's nationality. 
+
+
+ | User: tell me about visa facilitation company | Bot: Visa Facilitation Company is a service that helps individuals navigate the visa application process. They offer guidance and support with gathering documents, understanding requirements, and submitting applications. Essentially, they aim to make the often complex visa process smoother and less stressful for applicants. 
+ | User: please guide me through the document prepration steps | Bot: Here's a general guide to document preparation for a visa application. 
+
+Remember, specific requirements vary by country and visa type, so always check the embassy or consulate's website first!
+
+1. **Passport:** Ensure your passport is valid for at least six months beyond your intended stay and has enough blank pages.
+2. **Application Form:** Complete the application form accurately and legibly, providing all requested information.
+3. **Photographs:** Obtain passport-sized photographs that meet the specified requirements (size, background, etc.).
+4. **Financial Documents:** Prepare proof of sufficient funds to cover your expenses during your stay (bank statements, employment letter, etc.).
+5. **Travel Itinerary:**  Create a detailed itinerary outlining your planned dates and activities in the destination country.
+6. **Proof of Accommodation:**  Provide evidence of where you will be staying (hotel reservations, invitation letter from a host, etc.).
+7. **Supporting Documents:**  Gather any additional documents specific to your visa type (e.g., employment contract, student acceptance letter, sponsorship letter).
+
+**Important:** Make copies of all documents and keep them separate from your originals. 
+
+
+
+ |"
+2025-05-31 01:32:00,c36ff01d,default_session,tell me about Application Tracking process,"Application Tracking at Visa Facilitation Company allows you to stay updated on your visa application's progress in real-time.  You'll receive notifications about the different stages of the process, ensuring you're always informed. This transparency keeps you at ease and helps manage your expectations. 
+
+
+","User: tell me about Application Tracking process | Bot: Application Tracking at Visa Facilitation Company allows you to stay updated on your visa application's progress in real-time.  You'll receive notifications about the different stages of the process, ensuring you're always informed. This transparency keeps you at ease and helps manage your expectations. 
+
+
+ |"
+2025-05-31 01:32:32,c36ff01d,default_session,do you have Customer Support*,"Yes, you can reach our customer support team via phone, email, or through our website's live chat.  
+","User: tell me about Application Tracking process | Bot: Application Tracking at Visa Facilitation Company allows you to stay updated on your visa application's progress in real-time.  You'll receive notifications about the different stages of the process, ensuring you're always informed. This transparency keeps you at ease and helps manage your expectations. 
+
+
+ | User: do you have Customer Support* | Bot: Yes, you can reach our customer support team via phone, email, or through our website's live chat.  
+ |"
+2025-05-31 01:39:06,c36ff01d,default_session,do you have Customer Support,"Yes, we do. 
+","User: tell me about Application Tracking process | Bot: Application Tracking at Visa Facilitation Company allows you to stay updated on your visa application's progress in real-time.  You'll receive notifications about the different stages of the process, ensuring you're always informed. This transparency keeps you at ease and helps manage your expectations. 
+
+
+ | User: do you have Customer Support* | Bot: Yes, you can reach our customer support team via phone, email, or through our website's live chat.  
+ | User: do you have Customer Support | Bot: Yes, we do. 
+ |"
 
