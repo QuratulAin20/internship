@@ -229,15 +229,6 @@ def generate_answer(question):
 question = "What was the decision in R v NGUYEN [2001]?"
 print("Answer:", generate_answer(question))
 
-# Login to HF
-from huggingface_hub import notebook_login
-notebook_login()
-
-# Push model to Hub
-model.push_to_hub("Ain20/gpt2-legal-finetuned")
-tokenizer.push_to_hub("Ain20/gpt2-legal-finetuned")
-
-dataset["test"][1]
 
 
 
