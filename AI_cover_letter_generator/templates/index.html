@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Cover Letter Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Cover Letter Generator</h1>
+        <p>Upload your resume and the job description (TXT, PDF, JSON, DOCX) to generate a customized cover letter.</p>
 
+        <form id="coverLetterForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="resume">Your Resume File:</label>
+                <input type="file" id="resume" name="resume" accept=".txt,.pdf,.json,.docx" required>
+            </div>
+
+            <div class="form-group">
+                <label for="job_description">Job Description File:</label>
+                <input type="file" id="job_description" name="job_description" accept=".txt,.pdf,.json,.docx" required>
+            </div>
+
+            <button type="submit">Generate Cover Letter</button>
+        </form>
+
+        <div id="loading" style="display:none;">
+            <p>Processing files and generating cover letter... Please wait.</p>
+            <div class="spinner"></div>
+        </div>
+        
+        <div id="error-message" class="error" style="display:none;"></div>
+
+        <div id="outputArea" style="display:none;">
+            <h2>Generated Cover Letter:</h2>
+            <pre id="coverLetterOutput"></pre>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('coverLetterForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            
+            const resumeFile = document.getElementById('resume').files[0];
+            const jobDescriptionFile = document.getElementById('job_description').files[0];
+            const outputArea = document.getElementById('outputArea');
+            const coverLetterOutput = document.getElementById('coverLetterOutput');
+            const loadingIndicator = document.getElementById('loading');
+            const errorMessageDiv = document.getElementById('error-message');
+
+            outputArea.style.display = 'none';
+            coverLetterOutput.textContent = '';
+            loadingIndicator.style.display = 'block';
+            errorMessageDiv.style.display = 'none';
+            errorMessageDiv.textContent = '';
+
+            if (!resumeFile || !jobDescriptionFile) {
+                errorMessageDiv.textContent = 'Please select both resume and job description files.';
+                errorMessageDiv.style.display = 'block';
+                loadingIndicator.style.display = 'none';
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('resume', resumeFile);
+            formData.append('job_description', jobDescriptionFile);
+
+            try {
+                const response = await fetch('/generate', {
+                    method: 'POST',
+                    body: formData // No 'Content-Type' header needed, browser sets it for FormData
+                });
+
+                loadingIndicator.style.display = 'none';
+                const result = await response.json();
+
+                if (response.ok) {
+                    coverLetterOutput.textContent = result.cover_letter;
+                    outputArea.style.display = 'block';
+                } else {
+                    errorMessageDiv.textContent = 'Error: ' + (result.error || 'Unknown error from server');
+                    errorMessageDiv.style.display = 'block';
+                }
+
+            } catch (error) {
+                loadingIndicator.style.display = 'none';
+                errorMessageDiv.textContent = 'Network error or server issue: ' + error.message;
+                errorMessageDiv.style.display = 'block';
+                console.error('Error:', error);
+            }
+        });
+    </script>
+</body>
+</html>
