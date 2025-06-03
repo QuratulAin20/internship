@@ -17,6 +17,7 @@ df.head()
 df.drop(columns=['text', 'prompt', 'source'], inplace=True)
 df.head()
 
+# Data cleaning
 import re
 import string
 
@@ -49,8 +50,7 @@ def clean_data(df):
     df['question'] = df['question'].apply(clean_text)
     df['answer'] = df['answer'].apply(clean_text)
     return df
-
-# Assuming df is already defined from previous steps
+    
 # Apply the cleaning function to the DataFrame
 cleaned_df = clean_data(df.copy()) # Create a copy to avoid modifying the original df in place
 
@@ -72,17 +72,15 @@ cleaned_df["text"] = cleaned_df.apply(
 
 cleaned_df["text"][0]
 
-#converting cleaned_df into hugging face dataset to further tokinization
+# converting cleaned_df into hugging face dataset to further tokinization
 from datasets import Dataset
 dataset = Dataset.from_pandas(cleaned_df[["text"]])
 print(dataset)
 
-print(dataset[0]) # Access the first element
+print(dataset[0]) 
 print(dataset[5])
 
-#Convert to HuggingFace Dataset
-from datasets import Dataset
-
+# data splitting
 dataset = Dataset.from_pandas(cleaned_df[["text"]])
 dataset = dataset.train_test_split(test_size=0.1)
 
@@ -126,7 +124,7 @@ training_args = TrainingArguments(
     logging_steps=10,
     save_strategy="epoch",
     eval_strategy="epoch",
-    fp16=True,  # Use fp16=True if on GPU and supported
+    fp16=True,  
     logging_dir="./logs",
 )
 
@@ -197,9 +195,9 @@ def compute_perplexity(text):
 # Example
 print("Perplexity:", compute_perplexity(dataset["test"][0]["text"]))
 
-"""### The model demonstrates a decent performance with a BLEU score of 0.442, indicating moderate quality. The consistency in n-gram precision is a positive sign, although the excessive translation length suggests that the output may need refinement to achieve conciseness without losing meaning.
-
-
+"""### The model demonstrates a decent performance with a BLEU score of 0.442, 
+indicating moderate quality. The consistency in n-gram precision is a positive sign, 
+although the excessive translation length suggests that the output may need refinement to achieve conciseness without losing meaning.
 """
 
 def generate_answer(question):
@@ -211,7 +209,7 @@ def generate_answer(question):
         max_new_tokens=250,
         do_sample=False,
         temperature=0.7,
-        top_k=50,
+        top_k=5,
         pad_token_id=tokenizer.eos_token_id
     )
 
