@@ -1,0 +1,5 @@
+
+#python -W ignore wav2lip-onnx-256/inference_onnxModel.py --checkpoint_path "checkpoints\wav2lip_256.onnx" --face "wav2lip-onnx-256/face_256.jpg" --audio "wav2lip-onnx-256/files/ElevenLabs_Text_to_Speech_audio.mp3" --outfile "wav2lip-onnx-256/files/output.mp4" --nosmooth  --pads 0 10 0 0 --fps 29.97
+
+#cd /workspaces/codespaces-blank/
+python -W ignore inference_onnxModel.py --checkpoint_path "checkpoints/wav2lip_256.onnx" --face "face_256.jpg" --audio "ElevenLabs_Text_to_Speech_audio.mp3" --outfile "output.mp4" --nosmooth --pads 0 10 0 0 --fps 29.97
